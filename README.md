@@ -1,5 +1,5 @@
 # Steganography
-Steganography is for hiding text in the image and the image look doesnt change with openCV and Numpy Library
+Steganography is for hiding text in the image without changeing image look with openCV and Numpy Library
 
 ## Summery :
 This project first 
