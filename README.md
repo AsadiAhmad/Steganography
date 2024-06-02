@@ -38,9 +38,19 @@ import numpy as np
 from google.colab.patches import cv2_imshow
 ```
 
-
-
 ### Step3: Load Image
+Upload your image into google colab or for local device using a local image.
+
+found your image location and copy the path
+
+```sh
+image_path = "/content/Wallpaper.jpg"
+image = cv2.imread(image_path)
+cv2_imshow(image)
+```
+
+<img src="screenShots/Screenshot (796).png"/>
+
 ### Step4: Load text data
 ### Step5: Convert text to binary
 ### Step6: Calculate size of image
