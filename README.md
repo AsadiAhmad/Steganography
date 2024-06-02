@@ -137,6 +137,16 @@ text_parts = divide_string_parts(extended_binary_text, channels)
 ```
 
 ### Step9: Seperate image to channel parts
+Sperate image into Red Green and Blue frame
+
+```sh
+if channels == 3:
+    blue_channel, green_channel, red_channel = cv2.split(image)
+    blue_matrix = np.array(blue_channel)
+    green_matrix = np.array(green_channel)
+    red_matrix = np.array(red_channel)
+```
+
 ### Step10: Decode text into image
 ### Step11: Build image
 ### Step12: Encode text from image
