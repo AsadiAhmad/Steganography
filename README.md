@@ -52,6 +52,12 @@ cv2_imshow(image)
 <img src="/Image/Wallpaper.png"/>
 
 ### Step4: Load text data
+here you can enter your text to hide it in image
+
+```sh
+text = """here is your text"""
+```
+
 ### Step5: Convert text to binary
 ### Step6: Calculate size of image
 ### Step7: Extend binary bits
