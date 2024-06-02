@@ -30,6 +30,16 @@ install Numpy
 ```
 
 ### Step2: Import Librarys
+import opencv,numpy library and cv2_imshow for showing picture in google colab
+
+```sh
+import cv2
+import numpy as np
+from google.colab.patches import cv2_imshow
+```
+
+
+
 ### Step3: Load Image
 ### Step4: Load text data
 ### Step5: Convert text to binary
