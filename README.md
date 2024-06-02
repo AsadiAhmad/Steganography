@@ -49,7 +49,7 @@ image = cv2.imread(image_path)
 cv2_imshow(image)
 ```
 
-<img src="screenShots/Screenshot (796).png"/>
+<img src="Image/Wallpaper.jpg.png"/>
 
 ### Step4: Load text data
 ### Step5: Convert text to binary
