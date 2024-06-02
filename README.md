@@ -74,6 +74,34 @@ here is the sample of binary converted:
 010000000110100101101101
 
 ### Step6: Calculate size of image
+now you need to know what is your image size and how much it can hold data within
+
+```sh
+height, width, channels = image.shape
+image_size = height*width
+max_chars = int((channels*image_size)/8)
+```
+
+```sh
+print("image height : " + str(height))
+print("image width : " + str(width))
+print("image size : " + str(image_size))
+print("max charechter can hide in picture : " + str(max_chars))
+print("image can hide : " + str((channels*image_size)/80) + " Words")
+```
+
+here is some information about our image :
+
+image height : 720
+
+image width : 1280
+
+image size : 921600
+
+max charechter can hide in picture : 345600
+
+image can hide : 34560.0 Words
+
 ### Step7: Extend binary bits
 ### Step8: Spereate binary text into channel parts
 ### Step9: Seperate image to channel parts
