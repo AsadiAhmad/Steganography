@@ -103,6 +103,22 @@ max charechter can hide in picture : 345600
 image can hide : 34560.0 Words
 
 ### Step7: Extend binary bits
+Here you should change the format of your text into image to fit the text to image
+
+if your text is to big for your image here you see the error
+
+```sh
+def extend_binary_text(image_size, binary_text, max_chars):
+    needed_bits = len(binary_text)
+    if(needed_bits > max_chars*8):
+        print("text size is too high")
+        return
+
+    extended_binary_text = binary_text.ljust(max_chars*8, '0')
+    return extended_binary_text
+extended_binary_text = extend_binary_text(image_size, binary_text, max_chars)
+```
+
 ### Step8: Spereate binary text into channel parts
 ### Step9: Seperate image to channel parts
 ### Step10: Decode text into image
