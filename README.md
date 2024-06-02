@@ -218,3 +218,5 @@ def decode_text_from_image(image_path):
 
 decode_text_from_image("/content/ImageWithData.png")
 ```
+
+after running this method you can see the hided text
