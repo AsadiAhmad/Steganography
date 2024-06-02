@@ -59,6 +59,20 @@ text = """here is your text"""
 ```
 
 ### Step5: Convert text to binary
+you need to convert your text into binary text
+
+```sh
+def text_to_bin(text):
+    binary = ''.join(format(ord(char), '08b') for char in text)
+    return binary
+binary_text = text_to_bin(text)
+print(binary_text)
+```
+
+here is the sample of binary converted:
+
+010000000110100101101101
+
 ### Step6: Calculate size of image
 ### Step7: Extend binary bits
 ### Step8: Spereate binary text into channel parts
