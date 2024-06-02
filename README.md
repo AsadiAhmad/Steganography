@@ -1,5 +1,8 @@
 # Steganography
-Steganography for hiding text
+Steganography for hiding text with openCV and Numpy Library
+
+## Summery :
+This project first 
 
 ## Tech :hammer_and_wrench: Languages and Tools :
 <div>
