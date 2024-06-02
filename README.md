@@ -49,7 +49,7 @@ image = cv2.imread(image_path)
 cv2_imshow(image)
 ```
 
-<img src="/Image/Wallpaper.jpg"/>
+<img src="/Images/Wallpaper.jpg"/>
 
 ### Step4: Load text data
 here you can enter your text to hide it in image
