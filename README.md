@@ -148,5 +148,23 @@ if channels == 3:
 ```
 
 ### Step10: Decode text into image
+Here is our main function for decoding data into image in here we remove the first bit(LSB) of a pixel then replace it with our data then do it for all pixels
+
+```sh
+def decimalToBinary(n): 
+    return format(n, '08b')
+
+def binaryToDecimal(n):
+    return int(n,2)
+
+counter = 0
+for i in range(height):
+    for j in range(width):
+        red_matrix[i,j] = binaryToDecimal(decimalToBinary(red_matrix[i,j])[0:7] + text_parts[0][counter])
+        green_matrix[i,j] = binaryToDecimal(decimalToBinary(green_matrix[i,j])[0:7] + text_parts[1][counter])
+        blue_matrix[i,j] = binaryToDecimal(decimalToBinary(blue_matrix[i,j])[0:7] + text_parts[2][counter])
+        counter += 1
+```
+
 ### Step11: Build image
 ### Step12: Encode text from image
