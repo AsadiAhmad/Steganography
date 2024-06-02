@@ -174,4 +174,8 @@ reconstructed_image = cv2.merge([blue_matrix, green_matrix, red_matrix])
 cv2_imshow(reconstructed_image)
 ```
 
+<img src="/Images/ImageWithData.png"/>
+
+if you notice you cant see any changes from the picture.
+
 ### Step12: Encode text from image
