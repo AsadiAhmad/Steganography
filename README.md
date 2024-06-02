@@ -167,4 +167,11 @@ for i in range(height):
 ```
 
 ### Step11: Build image
+We need to gather Red Green and Blue Frame and Biuld our image.
+
+```sh
+reconstructed_image = cv2.merge([blue_matrix, green_matrix, red_matrix])
+cv2_imshow(reconstructed_image)
+```
+
 ### Step12: Encode text from image
