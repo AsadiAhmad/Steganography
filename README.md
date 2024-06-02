@@ -120,6 +120,22 @@ extended_binary_text = extend_binary_text(image_size, binary_text, max_chars)
 ```
 
 ### Step8: Spereate binary text into channel parts
+Because we have RGB image for using maximum space from the image we should separate the text into 3 part
+
+```sh
+def divide_string_parts(text, channels):
+    part_length = len(text) // channels
+    text_parts = []
+    
+    for i in range(channels):
+        part_start = part_length * i
+        part_end = part_length * (i + 1)
+        text_parts.append(text[part_start:part_end])
+    
+    return text_parts
+text_parts = divide_string_parts(extended_binary_text, channels)
+```
+
 ### Step9: Seperate image to channel parts
 ### Step10: Decode text into image
 ### Step11: Build image
