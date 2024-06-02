@@ -13,6 +13,13 @@ This project first
 
 ## Tutorial
 ### Step1: Install Librarys
+We need to have installed Python, OpenCV and Numpy
+for windows and ubuntu we need install python, OpenCV and Numpy
+and for Google colab just install OpenCV
+
+```sh
+!pip install opencv-python
+```
 ### Step2: Import Librarys
 ### Step3: Load Image
 ### Step4: Load text data
