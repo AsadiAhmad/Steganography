@@ -171,6 +171,7 @@ We need to gather Red Green and Blue Frame and Biuld our image.
 
 ```sh
 reconstructed_image = cv2.merge([blue_matrix, green_matrix, red_matrix])
+cv2.imwrite("/content/ImageWithData.png", reconstructed_image)
 cv2_imshow(reconstructed_image)
 ```
 
@@ -179,3 +180,41 @@ cv2_imshow(reconstructed_image)
 if you notice you cant see any changes from the picture.
 
 ### Step12: Encode text from image
+Encode the image with reading the image by 8bit and extract the text.
+
+```sh
+def bin_to_text(binary):
+    text = ''.join(chr(int(binary[i:i+8], 2)) for i in range(0, len(binary), 8))
+    return text
+
+def cut_binary_at_8_zeros(binary_str):
+    for i in range(0, len(binary_str), 8):
+        chunk = binary_str[i:i+8]
+        if chunk == '00000000':
+            return binary_str[:i]
+    return binary_str
+
+def decode_text_from_image(image_path):
+    image = cv2.imread(image_path)
+    blue_channel, green_channel, red_channel = cv2.split(image)
+
+    blue_matrix = np.array(blue_channel)
+    green_matrix = np.array(green_channel)
+    red_matrix = np.array(red_channel)
+
+    text1 = ""
+    text2 = ""
+    text3 = ""
+    counter = 0
+    for i in range(height):
+        for j in range(width):
+            text1 = text1 + decimalToBinary(red_matrix[i,j])[-1]
+            text2 = text2 + decimalToBinary(green_matrix[i,j])[-1]
+            text3 = text3 + decimalToBinary(blue_matrix[i,j])[-1]
+            counter += 1
+    concated_binary_text = text1 + text2 + text3
+    cuted_binary_text = cut_binary_at_8_zeros(concated_binary_text)
+    return bin_to_text(cuted_binary_text)
+
+decode_text_from_image("/content/ImageWithData.png")
+```
