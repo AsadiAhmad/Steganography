@@ -1,7 +1,7 @@
 # Steganography
 Steganography is for hiding text in the image without changeing image look with openCV and Numpy Library
 
-<img src="/Images/steganogrphy.jpg"/>
+<img src="/Images/steganography.jpg"/>
 
 ## Summery :
 This project first we calculate image features like height width and size then convert the text into binary text then check if the image is big enough to store the text ? then extend the 0 bit to fit the text into image size. seprate the image into Red Green and Blue frame then seprate the text into 3 part then for every frame we remove the LSB bit of a pixel then replace it with our bit from the text then do this for all pixels then our text is decoded into image. now we can do it reverse for encodeing text from image.
