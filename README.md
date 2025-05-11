@@ -219,3 +219,7 @@ decode_text_from_image("/content/ImageWithData.png")
 ```
 
 after running this method you can see the hided text
+
+## 🪪 License
+
+This project is licensed under the MIT License.
