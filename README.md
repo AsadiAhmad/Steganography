@@ -19,6 +19,10 @@ Steganography is for hiding text in the image without changeing image look with 
 - OpenCV : Best Library for working with images
 - Numpy : Best Library for working with arrays in python
 
+## 💻 Run the Notebook on Google Colab
+
+You can easily run this code on google colab by just clicking this badge [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AsadiAhmad/Steganography/blob/main/Code/Steganography.ipynb)
+
 ## 📝 Tutorial
 ### Step1: Install Librarys
 We need to have installed Python, OpenCV and Numpy
