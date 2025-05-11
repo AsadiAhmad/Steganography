@@ -19,7 +19,7 @@ Steganography is for hiding text in the image without changeing image look with 
 - OpenCV : Best Library for working with images
 - Numpy : Best Library for working with arrays in python
 
-## Tutorial
+## 📝 Tutorial
 ### Step1: Install Librarys
 We need to have installed Python, OpenCV and Numpy
 
